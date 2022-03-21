@@ -26,7 +26,7 @@ object KafkaStreamingObject {
 
     import spark.implicits._
 
-    val ssc = new StreamingContext(conf,Seconds(2))
+    val ssc = new StreamingContext(conf,Seconds(20))
 
     val kafkaParams = Map[String, Object](
       "bootstrap.servers" -> "localhost:9092",
